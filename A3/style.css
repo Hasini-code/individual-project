@@ -1,0 +1,146 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === GLOBAL === */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("p1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display:flex;
+  
+  flex-direction: column;
+}
+
+/* === HEADER === */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: orange;
+  color: white;
+}
+
+/* === MAIN CONTENT WRAPPER === */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color:orange;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* === MENU SECTION === */
+.menu-section {
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.menu-items .item {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  min-width: 200px;
+  color: #fff;
+}
+
+/* === CONTACT SECTION === */
+.contact-section {
+  text-align: center;
+  color: orange;
+  font-size: x-large;
+  background-color: black;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
